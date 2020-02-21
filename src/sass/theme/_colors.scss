@@ -1,3 +1,10 @@
+$theme-colors: map-remove($theme-colors, "success", "info", "danger", "warning");
+
 $theme-colors: (
-  "primary": $blue
+  "primary": $primary,
+  "primary-dark": $primary-dark,
+  "secondary": $secondary,
+  "secondary-light": $secondary-light,
+  "dark": $dark,
+  "light": $light
 );
