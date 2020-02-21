@@ -5301,3 +5301,14 @@ body, html {
     .navbar .navbar-toggler {
       outline: none;
       border: none; } }
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .navbar {
+    height: initial;
+    padding-top: 40px;
+    padding-bottom: 40px; }
+    .navbar .navbar-collapse {
+      margin-top: 40px; }
+    .navbar .navbar-toggler {
+      outline: none;
+      border: none; } }
