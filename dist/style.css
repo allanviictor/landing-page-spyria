@@ -1,3 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700&display=swap");
+.btn.btn-secondary {
+  line-height: 22px;
+  letter-spacing: 0;
+  border: 2px solid;
+  font-weight: bold;
+  background: transparent;
+  border-radius: 0;
+  transition: all 300ms;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #FFE8AF;
+  border-color: #FFE8AF;
+  transition: all 300ms; }
+  .btn.btn-secondary:hover {
+    transition: all 300ms;
+    background: #FFE8AF;
+    border-color: #FFE8AF; }
+  .btn.btn-secondary:hover {
+    transition: all 300ms;
+    color: #5B5B5B; }
+
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
@@ -5,7 +27,6 @@
  * @site https://jonsuh.com/hamburgers
  * @link https://github.com/jonsuh/hamburgers
  */
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700&display=swap");
 .hamburger {
   padding: 15px 15px;
   display: inline-block;
@@ -127,6 +148,25 @@
     transition: all 300ms;
     color: #fbd986 !important;
     fill: #fbd986 !important; }
+
+header {
+  background: url("./assets/bg-header.png") no-repeat;
+  width: 100%;
+  height: 70vh;
+  background-size: cover;
+  background-position: center center; }
+  header h1 {
+    font-weight: 700;
+    font-size: 55px; }
+
+.mask-header {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #000000;
+  opacity: .4; }
 
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
@@ -5300,7 +5340,16 @@ body, html {
       margin-top: 20px; }
     .navbar .navbar-toggler {
       outline: none;
-      border: none; } }
+      border: none; }
+    .navbar .nav-logo {
+      width: 150px; }
+  header {
+    height: 30vh; }
+    header h1 {
+      font-size: 30px; }
+  .btn.btn-secondary {
+    font-size: 13px;
+    padding: 5px 10px; } }
 
 @media (min-width: 576px) and (max-width: 991.98px) {
   .navbar {
@@ -5311,4 +5360,8 @@ body, html {
       margin-top: 40px; }
     .navbar .navbar-toggler {
       outline: none;
-      border: none; } }
+      border: none; }
+  header {
+    height: 40vh; }
+    header h1 {
+      font-size: 47px; } }
