@@ -168,6 +168,33 @@ header {
   background: #000000;
   opacity: .4; }
 
+.about-us .title {
+  font-size: 40px;
+  font-weight: bold;
+  position: relative;
+  color: #5B5B5B;
+  opacity: 1; }
+  .about-us .title::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 97px;
+    height: 2px;
+    background: #F9CA55; }
+
+.about-us .text-content {
+  font-size: 16px;
+  color: #5B5B5B;
+  letter-spacing: 0;
+  line-height: 30px;
+  font-weight: 400; }
+
+.about-us img {
+  height: 372px;
+  object-fit: cover; }
+
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -5349,7 +5376,13 @@ body, html {
       font-size: 30px; }
   .btn.btn-secondary {
     font-size: 13px;
-    padding: 5px 10px; } }
+    padding: 5px 10px; }
+  .about-us .title {
+    font-size: 25px; }
+  .about-us .text-content {
+    font-size: 14px; }
+  .about-us img {
+    height: 250px; } }
 
 @media (min-width: 576px) and (max-width: 991.98px) {
   .navbar {
