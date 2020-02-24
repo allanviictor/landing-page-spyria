@@ -24,7 +24,7 @@
     letter-spacing: 0
     border: 2px solid
     font-weight: bold
-    background: transparent
+    background-color: transparent
     border-radius: 0
     transition: all 300ms 
     padding: 10px 15px
@@ -33,5 +33,11 @@
     border-color: $border-color
     &:hover 
         transition: all 300ms 
-        background: $border-color
+        background-color:  rgba($border-color, 0.2)
         border-color: $border-color
+    &:not(:disabled):not(.disabled):active,
+    &:focus
+        background: initial
+        box-shadow: none !important
+        border-color: $border-color
+        

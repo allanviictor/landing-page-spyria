@@ -1,0 +1,55 @@
+.carousel-team
+    background: $primary
+    .title  
+        @include titles(#ffffff, 1)
+    .owl-carousel
+        .item   
+            padding: 35px 0px
+            display: flex
+            justify-content: center
+        .owl-nav    
+            display: flex 
+            justify-content: space-between
+            position: relative
+            top: -180px
+            .owl-prev   
+                position: relative
+                left: -80px
+            .owl-next   
+                position: relative
+                right: -80px
+    .owl-filter-bar 
+        display: flex
+    .card-item  
+        width: 271px
+        height: 260px
+        border: none
+        border-radius: 0
+        box-shadow: 2px 3px 6px #00000059
+        .card-img-top   
+            object-fit: cover
+            height: 165px
+            width: 100%
+            object-position: center center
+            border-radius: 0
+    .card-title 
+        font-size: 13px
+        font-weight: bold
+        letter-spacing: 0
+        line-height: 18px
+        color: $primary-dark
+    .card-text
+        font-size: 12px
+        font-weight: 400
+        font-style: italic
+        line-height: 17px
+        letter-spacing: 0
+        color: $dark
+        opacity: .7
+        margin: 0
+        text-align: center
+    .current    
+        background: $secondary-light !important
+        color: $primary !important
+    .btn.btn-secondary:active   
+        color: $secondary-light !important

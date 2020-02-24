@@ -15,7 +15,8 @@ function style() {
 
 
 function js() {
-    return gulp.src(['./src/js/vendor/jquery.js', './src/js/vendor/bootstrap.min.js', './src/js/app.js'])
+    return gulp.src(['./src/js/vendor/jquery.js', './src/js/vendor/bootstrap.min.js', 
+    './src/js/vendor/owl.carousel.min.js', './src/js/vendor/owlcarousel2-filter.min.js', './src/js/app.js'])
     .pipe(concat('app.js')) 
     .pipe(gulp.dest('./dist')) 
     .pipe(browserSync.stream())
