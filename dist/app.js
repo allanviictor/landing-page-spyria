@@ -33,10 +33,15 @@ $hamburger.on("click", function (e) {
 var owl = $('.owl-carousel').owlCarousel({
     margin:10,
     nav:true,
+    dots: false,
     navText: ["<img style='transform: scale(-1)' src='./assets/ic-arrow-carrousel.svg'>", "<img src='./assets/ic-arrow-carrousel.svg'>"],
     responsive:{
         0:{
-            items:3
+            items:1,
+            nav:false
+        },
+        768:{
+            items:2
         },
         1000:{
             items:3
@@ -45,7 +50,10 @@ var owl = $('.owl-carousel').owlCarousel({
 })
 
 
-owl.owlcarousel2_filter( '.recife' );
+
+
+owl.owlcarousel2_filter('.recife')
+$("a[data-owl-filter='.recife']").addClass('current')
 
 
 $( '.owl-filter-bar' ).on( 'click', '.item', function(e) {

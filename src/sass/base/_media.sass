@@ -24,6 +24,16 @@
             font-size: 14px
         img 
             height: 250px
+    .carousel-team
+        &::before
+            display: none 
+        .owl-carousel
+            .owl-nav
+                top: 0px
+                .owl-prev   
+                    left: 0px
+                .owl-next   
+                    right: 0px
 
 @include media-breakpoint-between(sm, md)
     .navbar

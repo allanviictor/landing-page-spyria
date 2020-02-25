@@ -1,5 +1,16 @@
 .carousel-team
     background: $primary
+    position: relative
+    overflow-x: hidden
+    &::before 
+        content: ''
+        width: 111px
+        height: 178px
+        position: absolute
+        top: 10%
+        right: -5px
+        background: url('./assets/grafismo.png') no-repeat
+        background-size: contain
     .title  
         @include titles(#ffffff, 1)
     .owl-carousel
