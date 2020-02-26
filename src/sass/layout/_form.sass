@@ -1,0 +1,53 @@
+.form   
+    .title  
+        @include titles($dark,.8)
+        font-size: 35px
+        &::after    
+            content: none
+    label 
+        font-size: 14px
+        font-weight: bold
+        letter-spacing: 0
+        line-height: 30px
+        color: $dark
+        opacity: .8
+        text-transform: uppercase
+        margin: 0
+        margin-top: 10px
+    input,
+    textarea  
+        border: 1px solid #C8C8C8
+        border-radius: 0
+        height: 32px
+        &:focus 
+            border-color: $primary
+            outline: none
+            box-shadow: 0 0 0 0.1rem rgba($primary, 0.5)
+            box-sizing: border-box
+        &::-webkit-input-placeholder    
+            font-size: 14px
+            color: $dark
+            opacity: .8
+            font-style: italic
+    .box-router 
+        background: $primary
+        .title
+            font-size: 25px
+            color: $white
+            opacity: 1
+        img 
+            width: 100%
+            object-fit: cover
+        p   
+            font-size: 13px
+            font-weight: 400
+            opacity: .9
+            color: $white
+            line-height: 18px
+    .form-submited 
+        letter-spacing: 0
+        font-weight: bold
+        font-size: 14px
+        color: $primary
+        text-transform: uppercase
+        

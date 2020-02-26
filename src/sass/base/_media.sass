@@ -3,8 +3,6 @@
         height: initial
         padding-top: 20px
         padding-bottom: 20px
-        .navbar-collapse    
-            margin-top: 20px
         .navbar-toggler 
             outline: none
             border: none
@@ -27,6 +25,8 @@
     .carousel-team
         &::before
             display: none 
+        .title  
+            font-size: 25px 
         .owl-carousel
             .owl-nav
                 top: 0px
@@ -34,6 +34,13 @@
                     left: 0px
                 .owl-next   
                     right: 0px
+    .form   
+        .title 
+           font-size: 25px 
+    .footer
+        .text-copyright 
+            margin-top: 0px
+            padding-top: 10px
 
 @include media-breakpoint-between(sm, md)
     .navbar

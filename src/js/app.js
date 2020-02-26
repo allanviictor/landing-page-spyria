@@ -45,3 +45,34 @@ $( '.owl-filter-bar' ).on( 'click', '.item', function(e) {
     owl.owlcarousel2_filter(filter);
 
 })
+
+
+$('.form-submited').hide()
+
+$('#form').submit(function(e){
+    e.preventDefault();
+    if(!false){
+        $('.form-submited').fadeIn('slow')
+        return true;
+    }
+    
+})
+
+
+$("a.smooth-scroll").on('click', function (event) {
+    if (this.hash !== "") {
+        event.preventDefault();
+
+        var hash = this.hash;
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top - $('.navbar').height()
+        }, 800);
+    }
+});
+
+$('.nav-link').click(function(e){
+    $('.navbar-collapse').collapse('hide');
+    $hamburger.toggleClass("is-active");
+})
+
+

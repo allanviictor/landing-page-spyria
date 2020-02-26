@@ -4,3 +4,23 @@
     &:hover 
         transition: all 300ms
         color: $secondary-light
+.btn.btn-primary  
+    @include buttons(14px, $primary, $primary)
+    text-transform: uppercase
+    padding: 4px 15px
+    &:focus
+        color: $primary !important
+    &:active    
+        color: $primary !important
+    &:hover 
+        transition: all 300ms
+        color: $primary
+.btn.btn-light 
+    @include buttons(14px, $white, $white) 
+    text-transform: uppercase
+    padding: 5px 13px
+    &:hover 
+        transition: all 300ms
+        color: $white
+
+    

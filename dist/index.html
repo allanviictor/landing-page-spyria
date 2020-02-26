@@ -22,13 +22,13 @@
             <div id="my-nav" class="collapse navbar-collapse justify-content-around">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item mx-1">
-                        <a class="nav-link text-white" href="#">Quem Somos</a>
+                        <a class="nav-link smooth-scroll text-white" href="#about-us">Quem Somos</a>
                     </li>
                     <li class="nav-item mx-1">
-                        <a class="nav-link text-white" href="#">Equipe</a>
+                        <a class="nav-link smooth-scroll text-white" href="#team">Equipe</a>
                     </li>
                    <li class="nav-item mx-1">
-                        <a class="nav-link text-white" href="#">Contato</a>
+                        <a class="nav-link smooth-scroll text-white" href="#contact">Contato</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav">
@@ -39,11 +39,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18.19" height="18.19" viewBox="0 0 18.19 18.19">
-                                <g fill="white" class="svg-icon">
-                                    <path class="a" d="M13.17,0H5.02A5.025,5.025,0,0,0,0,5.02v8.15a5.025,5.025,0,0,0,5.02,5.02h8.15a5.025,5.025,0,0,0,5.02-5.02V5.02A5.025,5.025,0,0,0,13.17,0Zm3.406,13.17a3.41,3.41,0,0,1-3.406,3.406H5.02A3.41,3.41,0,0,1,1.614,13.17V5.02A3.41,3.41,0,0,1,5.02,1.614h8.15A3.41,3.41,0,0,1,16.576,5.02v8.15Z"/><path class="a" d="M45.655,40.97a4.687,4.687,0,1,0,4.687,4.687A4.692,4.692,0,0,0,45.655,40.97Zm0,7.76a3.073,3.073,0,1,1,3.073-3.073A3.077,3.077,0,0,1,45.655,48.73Z" transform="translate(-36.56 -36.562)"/><path class="a" d="M120.1,28.251a1.183,1.183,0,1,0,.837.346A1.188,1.188,0,0,0,120.1,28.251Z" transform="translate(-106.126 -25.211)"/>
-                                </g>
-                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18.19" height="18.19" viewBox="0 0 18.19 18.19"><defs></defs><path class="a svg-icon" d="M13.17,0H5.02A5.025,5.025,0,0,0,0,5.02v8.15a5.025,5.025,0,0,0,5.02,5.02h8.15a5.025,5.025,0,0,0,5.02-5.02V5.02A5.025,5.025,0,0,0,13.17,0Zm3.406,13.17a3.41,3.41,0,0,1-3.406,3.406H5.02A3.41,3.41,0,0,1,1.614,13.17V5.02A3.41,3.41,0,0,1,5.02,1.614h8.15A3.41,3.41,0,0,1,16.576,5.02v8.15Z"/><path class="a svg-icon" d="M45.655,40.97a4.687,4.687,0,1,0,4.687,4.687A4.692,4.692,0,0,0,45.655,40.97Zm0,7.76a3.073,3.073,0,1,1,3.073-3.073A3.077,3.077,0,0,1,45.655,48.73Z" transform="translate(-36.56 -36.562)"/><path class="a svg-icon" d="M120.1,28.251a1.183,1.183,0,1,0,.837.346A1.188,1.188,0,0,0,120.1,28.251Z" transform="translate(-106.126 -25.211)"/></svg>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -62,11 +58,12 @@
             <div class="row">
                 <div class="col-lg-4 col-md-5 col-12 d-flex flex-wrap">
                     <h1 class="text-white">Simples. Sofisticado. <br/>Todo seu.</h1>
-                    <a class="btn btn-secondary">CONHEÇA NOSSO TIME</a>
+                    <a class="btn btn-secondary smooth-scroll" href="#team">CONHEÇA NOSSO TIME</a>
                 </div>
             </div>
         </div>
     </header>
+
     <section class="about-us py-5" id="about-us">
         <div class="container">
             <div class="row">
@@ -88,7 +85,7 @@
         </div>
     </section>
 
-    <section class="carousel-team py-5">
+    <section id="team" class="carousel-team py-5">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -218,6 +215,93 @@
             </div>
         </div>
     </section>
+
+    <section id="contact" class="form py-5">
+        <div class="container">
+            <div class="row justify-content-lg-between justify-content-md-center">
+                <div class="col-12 col-md-10 col-lg-6">
+                    <h3 class="title">
+                        Se interessou pelos nossos serviços? Manda uma mensagem pra gente. :)
+                    </h3>
+                    <form id="form" action="./index.html" method="POST">
+                        <label for="nome">Nome</label>
+                        <input id="nome" name="nome" class="form-control" type="text" placeholder="Ex.: Renata Lopes" required>
+                        <label for="tel">Telefone</label>
+                        <input id="tel" name="telefone" class="form-control" type="text" placeholder="(xx) x xxxx.xxxx" pattern="[0-9]+$">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" class="form-control" type="email" placeholder="exemplo@exemplo.com.br" required>
+                        <label for="textarea">Mensagem</label>
+                            <textarea id="textarea" name="mensagem" class="form-control" name="" placeholder="Digite sua mensagem" rows="5"></textarea>
+                        <div class="d-flex align-items-center mt-3">
+                            <button class="btn btn-primary" type="submit">Enviar</button>
+                            <p class="form-submited mb-0 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -46 417.81333 417" width="20px">
+                                    <g>
+                                        <path d="m159.988281 318.582031c-3.988281 4.011719-9.429687 6.25-15.082031 6.25s-11.09375-2.238281-15.082031-6.25l-120.449219-120.46875c-12.5-12.5-12.5-32.769531 0-45.246093l15.082031-15.085938c12.503907-12.5 32.75-12.5 45.25 0l75.199219 75.203125 203.199219-203.203125c12.503906-12.5 32.769531-12.5 45.25 0l15.082031 15.085938c12.5 12.5 12.5 32.765624 0 45.246093zm0 0" data-original="#000000" class="active-path" data-old_color="#000000" fill="#24BEC6"/>
+                                    </g> 
+                                </svg>
+                                <span class="ml-1">Enviado</span>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-5 col-md-8 col-12 mt-3 mt-lg-0 ">
+                    <div class="row justify-content-end">
+                        <div class="col-lg-11 col-12 px-0 px-lg-auto">
+                            <div class="box-router py-5 px-4">
+                                <h3 class="title">
+                                    Você também pode nos fazer uma visita.
+                                </h3>
+                                <img src="./assets/bg-house-router.png" alt="imagem de uma casa">
+                                <div class="d-flex mt-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 10.25 15.375"><defs></defs><g style="fill:#ffffff;" transform="translate(-85.333)"><g transform="translate(85.333)"><path d="M90.458,0a5.126,5.126,0,0,0-4.51,7.56l4.229,7.649a.32.32,0,0,0,.561,0l4.231-7.652A5.126,5.126,0,0,0,90.458,0Zm0,7.687A2.562,2.562,0,1,1,93.02,5.125,2.565,2.565,0,0,1,90.458,7.687Z" transform="translate(-85.333)"/></g></g></svg>
+                                    <p class="ml-1">R. Hermílio Arantes, 1040 - Vila dos Coqueiros. Petrolina. - PE.</p>
+                                </div>
+                                <a  class="btn btn-light">Traçar rota</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer mt-lg-5">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-4 col-12 mb-2 mb-lg-0">
+                    <img src="./assets/lg-cinza.svg" alt="logo spyria">
+                </div>
+                <div class="col-lg-3 col-12 my-2 my-lg-0">
+                    <div>
+                        <p class="text-contact">
+                            <img width="15px" src="./assets/ic-telefone.png" alt="icone de Telefone">
+                            +55 (87) 3312.4057
+                        </p>
+                        <p class="text-contact">
+                                <img width="15px" src="./assets/ic-email.png" alt="icone de email">
+                            contato@spyria.com.br
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 my-2 my-lg-0">
+                    <div>
+                        <p class="text-adress mb-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 10.25 15.375"><defs><style>.a{fill:#707070;}</style></defs><g transform="translate(-85.333)"><g transform="translate(85.333)"><path class="a" d="M90.458,0a5.126,5.126,0,0,0-4.51,7.56l4.229,7.649a.32.32,0,0,0,.561,0l4.231-7.652A5.126,5.126,0,0,0,90.458,0Zm0,7.687A2.562,2.562,0,1,1,93.02,5.125,2.565,2.565,0,0,1,90.458,7.687Z" transform="translate(-85.333)"/></g></g></svg>
+                            Av. das Libélulas, 1228. Campos de Jordão. Petrolina - PE. 54.457-092
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-copyright">
+                        Spyria Housing - Copyright 2019 © Todos os direitos reservados.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
     
 
     <script src="./app.js"></script>
