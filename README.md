@@ -12,7 +12,7 @@ teste front end. ladnding page spyria
 - Por último execute o comando **npm start** para iniciar o servidor do gulp na porta 3000
 
 ## Arquivos compilados
-- O bundle de arquivos compilados e pronto para visualização estão dentro da pasta **dist**
+- O bundle de arquivos compilados e prontos para visualização estão dentro da pasta **dist**
 - Abra o index.html dentro da pasta **dist** para ver a landing page pronta
 
 ## Estrutura de Pastas
