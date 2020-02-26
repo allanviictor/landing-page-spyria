@@ -1,5 +1,5 @@
 # landing page spyria
-teste front end. ladnding page spyria 
+teste front end. landing page spyria 
 
 ## Pre-requisitos para iniciar o servidor de desenvolvimento
 #### Certifique-se de ter instalado em sua maquina:
